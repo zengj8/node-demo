@@ -1,0 +1,14 @@
+{
+  "name": "redirect",
+  "version": "1.0.0",
+  "description": "获取重定向链中的最后一个网址",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}

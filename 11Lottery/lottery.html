@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+    <script>
+      let time;
+      let arr = [1, 2, 3, 4, 5, 6, 7];
+
+      function stop() {
+        clearTimeout(time);
+      }
+
+      function start() {
+        let r = Math.random() * arr.length;
+        let i = Math.floor(r);
+        document.getElementById("show").innerText = arr[i];
+        time = setTimeout("start()", 50);
+      }
+    </script>
+</HEAD>
+
+<BODY>
+<p id="show" style="font-size:100px;"></p>
+<input type="button" value="start" onclick="start();">
+<input type="button" value="stop" onclick="stop();">
+</BODY>
+</HTML>
